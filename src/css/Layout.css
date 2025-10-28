@@ -1,0 +1,64 @@
+.nav{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 4rem;
+    z-index: 1;
+}
+.nav-ul{
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+
+    gap: 2rem;
+}
+.a{
+    color: black;
+    font-size:1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*_____________ @media ________________*/
+/*  Descripción: Estilos para la visualización de la web en diferentes dispositivos.
+Movil, tablet, ordenadores en pantalla grande */
+
+@media (max-width:1024px){
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:820px){
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:768px){
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:431px){
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:415px){
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:376px){
+    .nav{
+        display: none;
+    }
+}

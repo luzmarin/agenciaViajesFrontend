@@ -1,0 +1,72 @@
+.Footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(221, 209, 231);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-h1{
+    padding: 1rem;
+}
+
+/*_____________ @media ________________*/
+/*  Descripción: Estilos para la visualización de la web en diferentes dispositivos.
+Movil, tablet, ordenadores en pantalla grande */
+
+@media (max-width:800px){
+    .Footer-h1{
+        font-size: 3.5em;
+        text-align: center;
+    }
+    .Footer-p{
+        font-size: 1em;
+    }
+}
+@media (max-width:540px){
+    .Footer-h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .Footer-p{
+        font-size: 1em;
+    }
+}
+@media (max-width:480px){
+    .Footer-h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .Footer-p{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:412px){
+    .Footer-h1{
+        font-size: 2.7em;
+        text-align: center;
+    }
+    .Footer-p{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:384px){
+    .Footer-h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .Footer-p{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:360px){
+    .Footer-h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .Footer-p{
+        font-size: 0.8em;
+    }
+}

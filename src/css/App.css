@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

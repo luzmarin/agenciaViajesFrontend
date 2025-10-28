@@ -1,0 +1,255 @@
+.card{
+    width: 100%;
+    background-color: rgb(222, 211, 235);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-titular{
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.2rem solid blue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 1.5rem;
+}
+.card-span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+.card-datos{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-picture{
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem;
+}
+.card-img{
+    border-radius: 2rem;
+}
+.card-div{
+    width: 50%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    align-items: center;
+    border: 0.2rem solid black;
+    border-radius: 0.8rem;
+}
+.card-h1{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+
+    padding: 1rem;
+}
+.card-h2{
+    color: blue;
+    font-size: 3em;
+}
+.card-img{
+    width: 83%;
+
+    position: relative;
+    left: 1rem;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin: 0.5rem;
+    font-style: italic;
+}
+
+/*_____________ @media ________________*/
+/*  Descripción: Estilos para la visualización de la web en diferentes dispositivos.
+Movil, tablet, ordenadores en pantalla grande */
+@media (max-width:800px){
+    .card-h1{
+        font-size: 1.8em;
+    }
+    .card-h2{
+        font-size: 3em;
+    }
+    .card-datos{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-titular{
+        width: 70%;
+    }
+    .card-span{
+        font-size: 1.2rem;
+    }
+    .card-picture{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-div{
+        width: 80%;
+        padding: 1rem;
+
+        position: relative;
+        bottom: 3.5rem;
+    }
+}
+@media (max-width:712px){
+    .card-h1{
+        font-size: 1.8em;
+    }
+    .card-h2{
+        font-size: 3em;
+    }
+    .card-datos{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-titular{
+        width: 70%;
+    }
+    .card-span{
+        font-size: 1em;
+    }
+    .card-picture{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-div{
+        width: 80%;
+        padding: 1rem;
+
+        position: relative;
+        bottom: 3.5rem;
+    }
+}
+@media (max-width:640px){
+    .card-h1{
+        font-size: 1.7em;
+    }
+    .card-h2{
+        font-size: 2.5em;
+    }
+}
+@media (max-width:600px){
+    .card-h2{
+        font-size: 2em;
+    }
+    .card-datos{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-titular{
+        width: 70%;
+    }
+    .card-span{
+        font-size: 0.6rem;
+    }
+    .card-picture{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-div{
+        width: 80%;
+        padding: 1rem;
+
+        position: relative;
+        bottom: 3rem;
+    }
+}
+@media (max-width:394px){
+    .card-h1{
+        font-size: 0.9em;
+    }
+    .card-h2{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:384px){
+    .card-h1{
+        font-size: 1.5em;
+    }
+    .card-h2{
+        font-size: 1.7em;
+    }
+}
+@media (max-width:360px){
+    .card-h1{
+        font-size: 1.3em;
+    }
+    .card-h2{
+        font-size: 1.5em;
+    }
+    .card-datos{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-titular{
+        width: 70%;
+    }
+    .card-span{
+        font-size: 0.6rem;
+    }
+    .card-picture{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-div{
+        width: 80%;
+        padding: 1rem;
+
+        position: relative;
+        bottom: 3rem;
+    }
+}
+@media (max-width:320px){
+    .card-h1{
+        font-size: 1.2em;
+    }
+    .card-h2{
+        font-size: 1.5em;
+    }
+    .card-p{
+        font-size: 1em;
+    }
+}
