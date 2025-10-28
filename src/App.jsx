@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 //Importar los archivos css
 import './css/App.css'
@@ -29,31 +29,29 @@ const loginItems = [
   {label: "Cerrar sesión"}  
 ]
 
-    useEffect(() => {
-      obtenerUsuarios();
+function App() {
 
-    }, [backendURL]);
+  const [usuarios, setUsuarios ] = useState([])
 
-    
-// obtener Usuarios
-    const obtenerUsuarios = async () => {
-      try {
-        const respuesta = await fetch(`${backendURL}/api/v1/usuarios`);
-        const resultado = await respuesta.json();
-        
-        if(resultado.status=="ok"){
-          setUsuarios(resultado.data);
-        } else {
-          console.log("Tuvimos un error");
-        }
+  const { VITE_USERS } = import.meta.env
 
-      }catch(error){
-        console.log("Error al obtener datos", error)
-
-      }
+  useEffect( () => {
+    let controller = new AbortController()
+    let options = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      signal : controller.signal
     }
 
-function App() {
+    fetch( VITE_USERS, options)
+    .then(res => res.json())
+    .then(data => setUsuarios(data))
+    .catch(err => console.log(err))
+    .finally(() => controller.abort() )
+
+  } , [])
 
   return (
     <>
