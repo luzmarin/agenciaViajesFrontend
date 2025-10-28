@@ -3,6 +3,9 @@ import { Footer } from "../components/Footer";
 
 
 export const Catalogo = () => {
+
+    const backendURL = import.meta.env.VITE_BACKEND;
+
     const [travel, setTravel] = useState([]);
     const [filterTravel, setFilterTravel] = useState([]);
     const [filter, setFilter] = useState('all');
@@ -95,8 +98,8 @@ export const Catalogo = () => {
 
         const añadirCarrito = async (travel) => {
             try {
-                //Se envía la información al backend
-                const response = await fetch(`http://localhost/api/v1/productos`, {
+                //Se envía la información de productos al backend
+                const response = await fetch(`${backendURL}/api/v1/productos`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
