@@ -29,6 +29,29 @@ const loginItems = [
   {label: "Cerrar sesión"}  
 ]
 
+    useEffect(() => {
+      obtenerUsuarios();
+
+    }, [backendURL]);
+
+    
+// obtener Usuarios
+    const obtenerUsuarios = async () => {
+      try {
+        const respuesta = await fetch(`${backendURL}/api/v1/usuarios`);
+        const resultado = await respuesta.json();
+        
+        if(resultado.status=="ok"){
+          setUsuarios(resultado.data);
+        } else {
+          console.log("Tuvimos un error");
+        }
+
+      }catch(error){
+        console.log("Error al obtener datos", error)
+
+      }
+    }
 
 function App() {
 
