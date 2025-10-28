@@ -93,6 +93,8 @@ export const Catalogo = () => {
             setFavourites(newFavourites);
         };
 
+        const {VITE_API} = import.meta.env
+
         const añadirCarrito = async (travel) => {
             try {
                 //Se envía la información al backend
