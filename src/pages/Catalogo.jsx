@@ -114,8 +114,8 @@ export const Catalogo = () => {
                 if (!carrito.some(item => item.id === travel.id)) {
                     setCarrito([...carrito, travel]);
                 }
-            } catch (error) {
-                console.error(error);
+            } catch (e) {
+                console.error(e);
                 alert("Error al añadir el viaje al carrito")
             }
         };
