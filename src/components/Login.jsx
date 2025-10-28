@@ -36,6 +36,8 @@ export const Login = ({ items }) => {
 
         //Se envían los datos al backend con fetch
         try {
+            //URL de la API del proyecto.
+            //1º intenta usar la variable de entorn VITE_API(que se encuentra en vercel), y si no existe, por defecto lee "http://localhost:3000"
             const API_URL = import.meta.env.VITE_API || "http://localhost:3000"
 
             const response = await fetch(`${API_URL}/api/v1/auth/login`, {

@@ -95,8 +95,12 @@ export const Catalogo = () => {
 
         const añadirCarrito = async (travel) => {
             try {
+                //URL de la API del proyecto.
+                //1º intenta usar la variable de entorn VITE_API(que se encuentra en vercel), y si no existe, por defecto lee "http://localhost:3000"
+                const API_URL = import.meta.env.VITE_API || "http://localhost:3000"
+
                 //Se envía la información de productos al backend
-                const response = await fetch(`http://localhost:3000/api/v1/productos`, {
+                const response = await fetch(`${API_URL}/api/v1/productos`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
