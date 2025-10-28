@@ -96,7 +96,7 @@ export const Catalogo = () => {
         const añadirCarrito = async (travel) => {
             try {
                 //Se envía la información al backend
-                const response = await fetch("http://localhost:3000/api/v1/productos", {
+                const response = await fetch(`${VITE_API}/v1/productos`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
