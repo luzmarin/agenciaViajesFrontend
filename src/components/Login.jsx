@@ -36,7 +36,7 @@ export const Login = ({ items }) => {
 
         //Se envían los datos al backend con fetch
         try {
-            const API_URL = import.meta.env.VITE_BACKEND || "http://localhost:3000"
+            const API_URL = import.meta.env.VITE_API || "http://localhost:3000"
 
             const response = await fetch(`${API_URL}/api/v1/auth/login`, {
                 method: "POST",
