@@ -30,7 +30,9 @@ export const FormRegistro = () => {
 
         //Se envían los datos al backend con fetch
         try {
-            const response = await fetch(`http://localhost:3000/api/v1/auth/register`, {
+            const API_URL = import.meta.env.VITE_API || "http://localhost:3000"
+
+            const response = await fetch(`${API_URL}/api/v1/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
