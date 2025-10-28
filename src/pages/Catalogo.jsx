@@ -118,7 +118,7 @@ export const Catalogo = () => {
                     setCarrito([...carrito, travel]);
                 }
             } catch (error) {
-                console.error(e);
+                console.error(error);
                 alert("Error al añadir el viaje al carrito")
             }
         };
