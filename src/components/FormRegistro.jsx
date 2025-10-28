@@ -56,10 +56,8 @@ export const FormRegistro = () => {
 
         } catch (e) {
             alert("Tenemos un error");
-            console.error(e)
         }
     };
-
 
     return (
         <>
