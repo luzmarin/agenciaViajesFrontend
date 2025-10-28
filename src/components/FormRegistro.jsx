@@ -22,6 +22,8 @@ export const FormRegistro = () => {
 
         const { nombre, email, password } = formdata;
 
+        const {VITE_API} = import.meta.env
+
         // Se validan los datos del usuario
         if (nombre.trim() === "" || email.trim() === "" || password.trim() === "") {
             alert("Todos los datos son obligatorios");
