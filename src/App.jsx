@@ -31,28 +31,6 @@ const loginItems = [
 
 function App() {
 
-  const [usuarios, setUsuarios ] = useState([])
-
-  const { VITE_USERS } = import.meta.env
-
-  useEffect( () => {
-    let controller = new AbortController()
-    let options = {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      signal : controller.signal
-    }
-
-    fetch( VITE_USERS, options)
-    .then(res => res.json())
-    .then(data => setUsuarios(data))
-    .catch(err => console.log(err))
-    .finally(() => controller.abort() )
-
-  } , [])
-
   return (
     <>
      <MenuDropDown items={menuItems} />
