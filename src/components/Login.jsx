@@ -26,8 +26,6 @@ export const Login = ({ items }) => {
 
         const{email, password} = formdata;
 
-        const {VITE_API} = import.meta.env
-
         //Se validan los datos del usuario
         if(email.trim() === "" || password.trim() === ""){
             alert("Todos los datos son obligatorios");
@@ -38,7 +36,7 @@ export const Login = ({ items }) => {
 
         //Se envían los datos al backend con fetch
         try {
-            const response = await fetch(`${VITE_API}/v1/auth/login`, {
+            const response = await fetch(`http://localhost:3000/api/v1/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

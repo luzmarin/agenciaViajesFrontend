@@ -93,12 +93,10 @@ export const Catalogo = () => {
             setFavourites(newFavourites);
         };
 
-        const {VITE_API} = import.meta.env
-
         const añadirCarrito = async (travel) => {
             try {
                 //Se envía la información al backend
-                const response = await fetch(`${VITE_API}/v1/productos`, {
+                const response = await fetch(`http://localhost/api/v1/productos`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({

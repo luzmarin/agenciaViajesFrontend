@@ -22,8 +22,6 @@ export const FormRegistro = () => {
 
         const { nombre, email, password } = formdata;
 
-        const {VITE_API} = import.meta.env
-
         // Se validan los datos del usuario
         if (nombre.trim() === "" || email.trim() === "" || password.trim() === "") {
             alert("Todos los datos son obligatorios");
@@ -32,7 +30,7 @@ export const FormRegistro = () => {
 
         //Se envían los datos al backend con fetch
         try {
-            const response = await fetch(`${VITE_API}/v1/auth/register`, {
+            const response = await fetch(`http://localhost:3000/api/v1/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
