@@ -237,9 +237,10 @@ Movil, tablet, ordenadores en pantalla grande */
         color: black;
         text-transform: uppercase;
         left: 10rem;
+        top: 9rem;
     }
     .form{
-        bottom: 10rem;
+        top: 12rem;
     }
     .form-button{
         width: 25%;
@@ -249,12 +250,12 @@ Movil, tablet, ordenadores en pantalla grande */
         font-size: 0.9em;
     }   
 }
-@media (max-width:431px){
+@media (max-width:432px){
     .form-h3{
         top: 10rem;
     }
     .form{
-        top: 6rem;
+        top: 12rem;
     }
 }
 @media (max-width:415px){
@@ -266,35 +267,22 @@ Movil, tablet, ordenadores en pantalla grande */
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        top: 18rem;
+        top: 12rem;
     }
 }
-@media (max-width:412px){
+@media (max-width:410px){
     .form-h3{
-        top: 14rem;
+        top: 10rem;
     }
     .form{
         bottom: 22rem;
-    }
-}
-@media (max-width:411px){
-    .form-h3{
-        top: 8rem;
-    }
-    .form{
-        width: 100%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        top: 8rem;
-        right: calc(100% - 100%);
     }
 }
 @media (max-width:400px){
     .form-h3{
         font-size: 1.2em;
         left: 9rem;
+        top: 9rem;
     }
     .form-input{
         width: 50%;
