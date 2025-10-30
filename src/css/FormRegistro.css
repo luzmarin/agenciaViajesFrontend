@@ -300,18 +300,13 @@ Movil, tablet, ordenadores en pantalla grande */
         top: 16rem;
     }
 }
-@media (max-width:391px){
-    .form-h3{
-        display: block;
-        top: 11em;
-    }
-}
 @media (max-width:384px){
     .form-h3{
+        left: 8rem;
         top: 12rem;
     }
     .form{
-        bottom: 10rem;
+        bottom: 13rem;
     }
 }
 @media (max-width:380px){
@@ -319,43 +314,27 @@ Movil, tablet, ordenadores en pantalla grande */
         left: 8rem;
     }
 }
-@media (max-width:376px){
+@media (max-width:375px){
     .form-h3{
         display: block;
     }
     .form{
-        top: 14rem;
+        top: 10rem;
     }
 }
 @media (max-width:360px){
     .form-h3{
-        top: 12rem;
+        top: 14rem;
     }
     .form{
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        top: 17rem;
+        bottom: 3rem;
     }
     .form-button{
         width: 35%;
-    }
-}
-@media (max-width:354px){
-    .form-h3{
-        top: 10rem;
-    }
-    .form{
-        top: 1rem;
-    }
-}
-@media (max-width:344px){
-    .form-h3{
-        top: 13rem;
-    }
-    .form{
-        top: 1rem;
     }
 }
 @media (max-width:340px){
@@ -365,17 +344,7 @@ Movil, tablet, ordenadores en pantalla grande */
 }
 @media (max-width:320px){
     .form-h3{
-        display: none;
-    }
-    .form{
-        flex-flow: column;
-        bottom: 1rem;
-    }
-    .form-input{
-        height: 30px;
-    }
-    .form-button{
-        width: 30%;
+        top: 8rem;
     }
 }
 @media (max-width:240px){

@@ -113,8 +113,8 @@ Movil, tablet, ordenadores en pantalla grande */
     }
 }
 @media (max-width:320px){
-    .marca{
-        font-size: 0.4em;
+    .carrusel-container{
+        width: 100%;
     }
 }
 @media (max-width:240px){

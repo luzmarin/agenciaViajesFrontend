@@ -119,6 +119,6 @@ Movil, tablet, ordenadores en pantalla grande */
 }
 @media (max-width:320px){
     .login{
-        left: 11rem;
+        left: 8rem;
     }
 }
